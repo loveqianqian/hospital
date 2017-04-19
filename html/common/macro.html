@@ -1,0 +1,169 @@
+<!--CSS资源样式-->
+<#macro cssResources>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="${base}/resources/icon/favicon.ico" type="image/x-icon"/>
+    <link href="${base}/resources/css/rl_css.css" rel="stylesheet">
+    <link href="${base}/resources/css/rl_jquery.ui.css" rel="stylesheet">
+    <link href="${base}/resources/css/style.css" rel="stylesheet">
+    <link href="${base}/resources/css/yidongduan.css" rel="stylesheet">
+</#macro>
+
+<!--JS资源文件-->
+<#macro jsResources>
+    <!-- Mainly scripts -->
+    <script src="${base}/resources/js/ajaxfileupload.js"></script>
+    <script src="${base}/resources/js/birthday2.js"></script>
+    <script src="${base}/resources/js/formater.js"></script>
+    <script src="${base}/resources/js/global.js"></script>
+    <script src="${base}/resources/js/gvalidate.js"></script>
+    <script src="${base}/resources/js/jdtjs.js"></script>
+    <script src="${base}/resources/js/jquery.js"></script>
+    <script src="${base}/resources/js/jquery.validate.js"></script>
+    <script src="${base}/resources/js/jquery-1.7.1.min.js"></script>
+    <script src="${base}/resources/js/loginpop.js"></script>
+    <script src="${base}/resources/js/top.js"></script>
+    <script src="${base}/resources/js/userattention.js"></script>
+    <script src="${base}/resources/js/validate3.js"></script>
+    <script src="${base}/resources/js/validate_expand.js"></script>
+    <script src="${base}/resources/js/ymxg.js"></script>
+    <script src="${base}/resources/js/hospitalslist.js"></script>
+    <script src="${base}/resources/js/topdate.js"></script>
+</#macro>
+
+<#macro leftNavC>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <!--头像-->
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <span>
+                            <img alt="image" width="50" height="50" class="img-circle"
+                                 src="${base}/resources/img/logo.png"/>
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">${USER.userName}</strong>
+                                </span>
+                                <span class="text-muted text-xs block">管理员<b class="caret"></b></span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="${base}/apollo/Main/editpasd">修改密码</a></li>
+                            <li class="divider"></li>
+                            <li><a href="${base}/apollo/Main/logout">退出</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        QR+
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">二维码管理</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="${base}/apollo/Main/main2">物码管理</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">商品管理</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="${base}/apollo/Main/main">商品列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">分类管理</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="${base}/apollo/Main/gt">商品顶级分类</a></li>
+                        <li><a href="${base}/apollo/Main/goodstype">商品子类管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-list-alt"></i> <span class="nav-label">客户管理</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="${base}/apollo/customer/getInfo">客户信息管理</a></li>
+                        <li><a href="${base}/apollo/finance/getMoney">修改财务信息</a></li>
+                        <li><a href="${base}/apollo/gcAction/getManager">公司商品管理</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</#macro>
+
+<#macro queryLeftNavC>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <!--头像-->
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <span>
+                            <img alt="image" width="50" height="50" class="img-circle"
+                                 src="${base}/resources/img/logo.png"/>
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">${USER.name}</strong>
+                                </span>
+                                <span class="text-muted text-xs block">用户</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        QR+
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">发码管理</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="${base}/server/query/main">二维码+项目管理</a></li>
+                    </ul>
+                </li>
+
+                <!--<li>-->
+                    <!--<a href="#"><i class="fa fa-table"></i> <span class="nav-label">下载管理</span><span-->
+                            <!--class="fa arrow"></span></a>-->
+                    <!--<ul class="nav nav-second-level collapse">-->
+                        <!--<li><a href="${base}/server/query/export">下载版本管理软件</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+
+                <li>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">财务管理(马上到来)</span><span
+                            class="fa arrow"></span></a>
+                    <!--<ul class="nav nav-second-level collapse">-->
+                        <!--<li><a href="${base}/apollo/Main/main">财务</a></li>-->
+                    <!--</ul>-->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</#macro>
+
+
+<#macro footer>
+    <div class="footer">
+        <div>
+            <small>天津市阿波罗信息技术有限公司 版权所有 &copy; 2016</small>
+        </div>
+    </div>
+</#macro>
+
+
+
+
+
+
+
+
+
