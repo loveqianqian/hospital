@@ -1,4 +1,4 @@
-<!doctype htmll>
+<!doctype html>
 <htmll>
     <head>
         <meta charset="utf-8">
@@ -17,26 +17,27 @@
                 specializedHospitalUrl: "http://zmyygh.114menhu.com/"
             };
             var basePath = GS.Url.basePath, hs = GS.Url.hs, hps = GS.Url.hps;
-            var logined = false;</script>
-        <link rel="shortcut icon" href="../resources/icon/favicon.ico" type="image/x-icon"/>
-        <link href="../resources/css/rl_css.css" rel="stylesheet">
-        <link href="../resources/css/rl_jquery.ui.css" rel="stylesheet">
-        <link href="../resources/css/style.css" rel="stylesheet">
-        <link href="../resources/css/yidongduan.css" rel="stylesheet">
+            var logined = false;
+        </script>
+        <link rel="shortcut icon" href="../../resources/icon/favicon.ico" type="image/x-icon"/>
+        <link href="../../resources/css/rl_css.css" rel="stylesheet">
+        <link href="../../resources/css/rl_jquery.ui.css" rel="stylesheet">
+        <link href="../../resources/css/style.css" rel="stylesheet">
+        <link href="../../resources/css/yidongduan.css" rel="stylesheet">
     </head>
     <body>
     <div id="dbnav">
-        <div class="dbnav_context"><p class="dbnav_context_left">
-            <img src="http://img.bjguahao.gov.cn/ws/1.0/hs/images/dbnav.png">
-            <span>010-114/116114电话预约</span>
-        </p>
+        <div class="dbnav_context">
+            <p class="dbnav_context_left">
+                <img src="http://img.bjguahao.gov.cn/ws/1.0/hs/images/dbnav.png">
+                <span>010-114/116114电话预约</span>
+            </p>
             <p class="dbnav_context_right" id="isLogin">欢迎来到北京市预约挂号统一平台 请
                 <a href="javascript:void(0);" class="db_denglu" onclick="center('#djdl','#djdl_close');">登录</a>
-                <a href="/reg.htmll" target="_blank">注册</a>
+                <a href="/reg.html" target="_blank">注册</a>
             </p>
             <div class="top_help">
-                <p class="top_help_p">
-                    <a href="/help.html" target="_blank">帮助中心</a>
+                <p class="top_help_p"><a href="/help.html" target="_blank">帮助中心</a>
                 </p>
                 <div class="top_help_h" style="display:none;">
                     <a href="/help/reg.html" target="_blank">注册指南</a>
@@ -109,12 +110,12 @@
                                 </div>
                                 <span><b class="tipinfo">*</b></span></dd>
                         </dl>
-                        <div class="tydiv"><input id="quick_login" name="submit" type="submit"
-                                                  class="ksdl_ul_denglu djdl_nav_qr" value="登录"><a href="/reg.html"
-                                                                                                   class="ksdl_ul_register"
-                                                                                                   target="_blank">注册新用户</a>
+                        <div class="tydiv">
+                            <input id="quick_login" name="submit" type="submit" class="ksdl_ul_denglu djdl_nav_qr" value="登录">
+                            <a href="/reg.html" class="ksdl_ul_register" target="_blank">注册新用户</a>
                         </div>
-                        <a href="javascript:void(0);" class="ksdl_ul_wjmm" onclick="popDiv();">忘记密码?</a></div>
+                        <a href="javascript:void(0);" class="ksdl_ul_wjmm" onclick="popDiv();">忘记密码?</a>
+                    </div>
                 </form>
                 <form id="rg_nrfrom2" method="post" action="" class="djdl_hide">
                     <div class="ysdl_ul">
@@ -122,11 +123,14 @@
                         <div class="vre_err"><span id="vresultspan"></span></div>
                         <dl class="djdl_ty_dl">
                             <dt>用户姓名：</dt>
-                            <dd><input id="nameVerifyLogin" name="userName" type="text" class="register_input"
+                            <dd>
+                                <input id="nameVerifyLogin" name="userName" type="text" class="register_input"
                                        value="请填写已注册用户真实姓名"
                                        onfocus="javascript:if(this.value=='请填写已注册用户真实姓名')this.value='',style.color='#000';"
                                        onblur="javascript:if(this.value=='')this.value='请填写已注册用户真实姓名',style.color='#ccc';"
-                                       style="color:#ccc"><b class="tipinfo">*</b></dd>
+                                       style="color:#ccc">
+                                <b class="tipinfo">*</b>
+                            </dd>
                         </dl>
                         <dl class="djdl_ty_dl">
                             <dt>证件号码：</dt>
@@ -443,368 +447,192 @@
             <div class="nav_right"><a target="_blank" href="http://zmyygh.114menhu.com/">社会知名医院</a></div>
         </div>
     </div>
-    <div id="ksgh_top">
-        <div class="ksgh_top_title"><p class="ksgh_top_p">热门科室</p></div>
-        <div class="ksgh_top_content">
-            <ul class="ksgh_top_ul">
-                <li><a href="/dpt/hps/1,0,0,0,43.html">神经外科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,56.html">妇科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,57.html">产科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,65.html">儿科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,90.html">骨科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,97.html">眼科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,120.html">耳鼻喉</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,123.html">肿瘤外科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,128.html">肿瘤综合科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,132.html">皮肤美容</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,135.html">心理咨询科</a></li>
-                <li><a href="/dpt/hps/1,0,0,0,162.html">中医科</a></li>
+    <div id="register_content">
+        <div class="register_top"><p class="register_top_p">注册新用户</p></div>
+        <div class="register_title">
+            <ul class="register_title_ul">
+                <li class="reg_title_li">填写基本信息</li>
+                <li>确认注册信息</li>
+                <li class="reg_title_li2">注册成功</li>
             </ul>
-            <a href="javascript:void();" id="ksgh_top_block">展开全部</a>
-            <ul class="ksgh_top_ul2">
-                <li><a href="/dpt/hps/1,0,0,0,182.html">急诊科</a></li>
-            </ul>
+            <span class="reg_title_li_s"></span></div>
+        <div class="rg_nr">
+            <form id="rg_nrfromReg" method="post" action="">
+                <dl class="rg_nr_dl">
+                    <dt>姓名：</dt>
+                    <dd><input autocomplete="off" maxlength=20 value="请输入您的真实姓名"
+                               onfocus="inputOnFocus(this, 'rg_nr_input', 'p', '')" onblur="inputOnBlur(this)"
+                               id="rg_nr_name" name="userName" class="rg_nr_input" type='text'>
+                        <p></p><input type="hidden" id="gender" value="1"/><input type="hidden" name="isAjax"
+                                                                                  value="true"/>
+                    </dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>性别：</dt>
+                    <dd><a href="1" class="rg_nr_boy rg_nr_acolor">男</a><a href="2" class="rg_nr_girl">女</a></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>证件类型：</dt>
+                    <dd><select id="rg_nr_dl_zjlx" class="rg_nr_dl_select" name="idType"
+                                onchange="var index = $(this).children('option:selected').index();this.style.color=(index==0?'#ccc':'black');showBirthday()"
+                                style="color:#ccc">
+                        <option value="-1" selected="selected">请选择证件类型</option>
+                        <option value="1" style="color:black">身份证</option>
+                        <option value="2" style="color:black">军官证</option>
+                        <option value="3" style="color:black">护照</option>
+                        <option value="4" style="color:black">港澳通行证</option>
+                        <option value="5" style="color:black">台胞证</option>
+                    </select></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>证件号码：</dt>
+                    <dd><input value="请您使用有效证件号码注册" onfocus="inputOnFocus(this, 'rg_nr_input', 'p', '')"
+                               onblur="inputOnBlur(this)" type="text" autocomplete="off" maxlength=20 id="rg_nr_zjhm"
+                               name="isshefn" class="rg_nr_input">
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>确认号码：</dt>
+                    <dd><input value="请您再次输入证件号码确认" onfocus="inputOnFocus(this, 'rg_nr_input', 'p', '')"
+                               onblur="inputOnBlur(this)" type="text" autocomplete="off" maxlength=20 id="rg_nr_qrzjhm"
+                               name="isshefnAgain" class="rg_nr_input">
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl" id="birthday">
+                    <dt>出生日期：</dt>
+                    <dd><select id="sel_year" class="zj_select" style="color:#ccc"
+                                onChange="var index = $(this).children('option:selected').index();this.style.color=(index==0?'#ccc':'black')"></select><select
+                            id="sel_month" class="zj_select" style="color:#ccc"
+                            onChange="var index = $(this).children('option:selected').index();this.style.color=(index==0?'#ccc':'black')"></select><select
+                            id="sel_day" class="zj_select" style="color:#ccc"
+                            onChange="var index = $(this).children('option:selected').index();this.style.color=(index==0?'#ccc':'black')"></select><br>
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>设置密码：</dt>
+                    <dd><input type="password" name="passWord" autocomplete="off" style="display:none" id="pw"/><input
+                            onfocus="inputOnFocus(this, 'rg_nr_input', 'p', '');" onblur="inputOnBlur(this);"
+                            type="password" maxlength=20 id="rg_nr_password" name="passWord" class="rg_nr_blank"
+                            autocomplete="off">
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>确认密码：</dt>
+                    <dd><input onfocus="inputOnFocus(this, 'rg_nr_input', 'p', '');" onblur="inputOnBlur(this);"
+                               type="password" autocomplete="off" maxlength=20 id="rg_nr_agin_password"
+                               name="passWordAgain"
+                               class="rg_nr_blank">
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>现居住地：</dt>
+                    <dd><select id="s_province" class="zj_select" name="province" style="color:#ccc"
+                                onChange="var index = $(this).children('option:selected').index();this.style.color=(index==0?'#ccc':'black')">
+                        <option value="-1" selected="selected">请选择省份</option>
+                    </select><select id="s_city" class="zj_select" name="city" style="color:#ccc"
+                                     onChange="var index = $(this).children('option:selected').index();this.style.color=(index==0?'#ccc':'black')">
+                        <option value="-1" selected="selected">请选择城市</option>
+                    </select><select id="s_county" class="zj_select" name="county" style="color:#ccc"
+                                     onChange="var index = $(this).children('option:selected').index();this.style.color=(index==0?'#ccc':'black')">
+                        <option value="-1" selected="selected">请选择区县</option>
+                    </select>
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>手机号码：</dt>
+                    <dd><input value=""
+                               onfocus="inputOnFocusTip(this ,'rg_nr_blank', 'p', 'rg_nr_dl_tip' ,'1部手机只能绑定1个有效证件')"
+                               onblur="inputOnBlurTip(this ,'', 'p', 'rg_nr_dl_tip')"
+                               onkeyup="this.value=this.value.replace(/\D/g,'')"
+                               onafterpaste="this.value=this.value.replace(/\D/g,'')" type='text' autocomplete="off"
+                               maxlength=14 id="rg_nr_sjhm" class="rg_nr_blank" name="sms">
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>验证码：</dt>
+                    <dd>
+                        <div maxlength=4 name="code" class="rg_nr_dl_dd_div"><input
+                                onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off"
+                                id="rg_nr_dl_yzm"
+                                type="text" class="rg_nr_input3" maxlength="4" name="code"><a
+                                href="javascript:reloadImage2()" class="sydl_yzmtp"><img src="/IdentityServlet"
+                                                                                         id="rg_nr_dl_img"
+                                                                                         align="absmiddle"
+                                                                                         class="rg_nr_dl_tpimg"></a><a
+                                href="javascript:reloadImage2()" class="sydl_new_hyz"></a></div>
+                        <p></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>手机验证码：</dt>
+                    <dd>
+                        <div maxlength=6 name="smsCode" class="rg_nr_dl_dd_div"><input
+                                onfocus="inputOnFocus(this, 'rg_nr_input3', '#sendsnsbtnr', '')"
+                                onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off"
+                                id="rg_nr_dl_s_sjyzm" type="text" class="rg_nr_input3" maxlength="6"
+                                name="smsCode"><input
+                                id="btnSendCode2" class="rg_nr_input_sjyzm" type="button" name="yt3" value="获取验证码">
+                        </div>
+                        <p id="sendsnsbtnr"></p></dd>
+                </dl>
+                <dl class="rg_nr_dl">
+                    <dt>　　</dt>
+                    <dd>
+                        <div class="rg_nr_dl_p2"><input name="Fruit" id="rg_nr_dl_radio" type="checkbox" checked>本人同意<a
+                                href="/gl/service.html" class="rg_nr_dl_yyghfuw" target="_blank">《预约挂号服务协议》</a></div>
+                        <p></p></dd>
+                </dl>
+                <input type="hidden" value="3" name="smsType"/><input name="submit" type="submit" class="rg_nr_qrzc"
+                                                                      value="注册" id="register_button"></form>
         </div>
     </div>
-    <div id="ksgh_c_content">
-        <div class="ksgh_c_left">
-            <div id='ksgh_c_guid'>
-                <ul class="ksgh_c_nav" style="border:none;">
-                    <li><a href="#ks1"><span class="ksgh_aico1"></span>内科</a></li>
-                    <li><a href="#ks2"><span class="ksgh_aico2"></span>外科</a></li>
-                    <li><a href="#ks3"><span class="ksgh_aico3"></span>妇产科</a></li>
-                    <li><a href="#ks4"><span class="ksgh_aico4"></span>生殖中心</a></li>
-                    <li><a href="#ks5"><span class="ksgh_aico5"></span>儿科</a></li>
-                    <li><a href="#ks6"><span class="ksgh_aico6"></span>骨外科</a></li>
-                    <li><a href="#ks7"><span class="ksgh_aico7"></span>眼科</a></li>
-                    <li><a href="#ks8"><span class="ksgh_aico8"></span>口腔科</a></li>
-                    <li><a href="#ks9"><span class="ksgh_aico9"></span>耳鼻咽喉头颈科</a></li>
-                    <li><a href="#ks10"><span class="ksgh_aico10"></span>肿瘤科</a></li>
-                    <li><a href="#ks11"><span class="ksgh_aico11"></span>皮肤性病科</a></li>
-                    <li><a href="#ks12"><span class="ksgh_aico12"></span>男性学科</a></li>
-                    <li><a href="#ks13"><span class="ksgh_aico13"></span>皮肤美容</a></li>
-                    <li><a href="#ks14"><span class="ksgh_aico14"></span>烧伤科</a></li>
-                    <li><a href="#ks15"><span class="ksgh_aico15"></span>精神心理科</a></li>
-                    <li><a href="#ks16"><span class="ksgh_aico16"></span>中医科</a></li>
-                    <li><a href="#ks17"><span class="ksgh_aico17"></span>中西医结合科</a></li>
-                    <li><a href="#ks18"><span class="ksgh_aico18"></span>传染病科</a></li>
-                    <li><a href="#ks19"><span class="ksgh_aico19"></span>结核病科</a></li>
-                    <li><a href="#ks20"><span class="ksgh_aico20"></span>介入医学科</a></li>
-                    <li><a href="#ks21"><span class="ksgh_aico21"></span>康复医学科</a></li>
-                    <li><a href="#ks22"><span class="ksgh_aico22"></span>运动医学科</a></li>
-                    <li><a href="#ks23"><span class="ksgh_aico23"></span>麻醉医学科</a></li>
-                    <li><a href="#ks24"><span class="ksgh_aico24"></span>职业病科</a></li>
-                    <li><a href="#ks25"><span class="ksgh_aico25"></span>地方病科</a></li>
-                    <li><a href="#ks26"><span class="ksgh_aico26"></span>营养科</a></li>
-                    <li><a href="#ks27"><span class="ksgh_aico27"></span>医学影像学</a></li>
-                    <li><a href="#ks28"><span class="ksgh_aico28"></span>病理科</a></li>
-                    <li><a href="#ks29"><span class="ksgh_aico29"></span>其他科室</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ksgh_c_right">
-            <p class="ksgh_c_right_p">
-                <a name="ks1"></a>
-                <span>内科</span>
-            </p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,30.html">心血管内科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,31.html">神经内科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,32.html">消化内科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,33.html">内分泌科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,34.html">免疫科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,35.html">呼吸科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,36.html">肾病内科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,37.html">血液科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,38.html">感染内科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,39.html">过敏反应科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,40.html">老年病科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,41.html">普通内科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,42.html">高压氧科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks2"></a><span>外科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,43.html">神经外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,44.html">功能神经外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,45.html">心血管外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,46.html">胸外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,47.html">整形科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,48.html">乳腺外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,49.html">泌尿外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,50.html">肝胆外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,51.html">肛肠科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,52.html">血管外科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,53.html">器官移植</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,54.html">微创外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,55.html">普外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,198.html">脑外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,199.html">烧伤科</a></td>
-                </tr></table>
-            <p class="ksgh_c_right_p"><a name="ks3"></a><span>妇产科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,56.html">妇科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,57.html">产科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,58.html">妇科内分泌</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,59.html">妇泌尿科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,61.html">遗传咨询科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,62.html">计划生育科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,63.html">妇产科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks4"></a><span>生殖中心</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,64.html">生殖中心</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks5"></a><span>儿科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,65.html">儿科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,66.html">新生儿科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,67.html">小儿呼吸科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,69.html">小儿营养保健科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,71.html">小儿心内科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,75.html">小儿皮肤科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,79.html">小儿精神科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,81.html">小儿外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,82.html">小儿心外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,84.html">小儿骨科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,86.html">小儿神经外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,88.html">小儿康复科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks6"></a><span>骨外科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,90.html">骨科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,91.html">脊柱外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,92.html">手外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,93.html">创伤骨科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,94.html">骨关节科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,95.html">矫形骨科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,96.html">骨质疏松科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,203.html">骨伤专科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks7"></a><span>眼科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,97.html">眼科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,98.html">小儿眼科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,99.html">眼底</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,100.html">角膜科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,101.html">青光眼</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,102.html">白内障</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,103.html">眼外伤</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,104.html">眼眶及肿瘤</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,105.html">屈光</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,106.html">眼整形</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,107.html">中医眼科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks8"></a><span>口腔科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,108.html">口腔科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,109.html">颌面外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,110.html">正畸科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,111.html">牙体牙髓科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,112.html">牙周科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,113.html">口腔粘膜科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,114.html">儿童口腔科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,115.html">口腔修复科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,116.html">种植科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,117.html">口腔预防科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,118.html">口腔特诊科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,119.html">口腔急诊科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks9"></a><span>耳鼻咽喉头颈科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,120.html">耳鼻喉</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,121.html">头颈外科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks10"></a><span>肿瘤科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,122.html">肿瘤内科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,123.html">肿瘤外科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,124.html">肿瘤妇科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,125.html">放疗科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,126.html">骨肿瘤科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,127.html">肿瘤康复科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,128.html">肿瘤综合科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks11"></a><span>皮肤性病科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,129.html">皮肤科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,130.html">性病科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks12"></a><span>男性学科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,131.html">男性学科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks13"></a><span>皮肤美容</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,132.html">皮肤美容</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks14"></a><span>烧伤科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,133.html">烧伤科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks15"></a><span>精神心理科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,134.html">精神科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,135.html">心理咨询科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,136.html">司法鉴定科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,137.html">双相障碍科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,138.html">药物依赖科</a></td>
-                </tr>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks16"></a><span>中医科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,139.html">中医妇产科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,140.html">中医儿科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,141.html">中医骨科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,142.html">中医皮肤科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,143.html">中医内分泌</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,144.html">中医消化科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,145.html">中医呼吸科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,146.html">中医肾病内科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,147.html">中医免疫内科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,148.html">中医心内科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,149.html">中医神经内科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,150.html">中医肿瘤科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,151.html">中医血液科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,153.html">中医肝病科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,154.html">中医五官科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,155.html">中医男科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,156.html">针灸科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,157.html">中医按摩科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,158.html">中医外科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,159.html">中医乳腺外科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,160.html">中医肛肠科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,161.html">中医老年病科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,162.html">中医科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,205.html">中医内科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,206.html">中医脾胃科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,207.html">膏方门诊</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,208.html">中医骨伤科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks17"></a><span>中西医结合科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,163.html">中西医结合科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks18"></a><span>传染病科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,164.html">肝病科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,165.html">传染科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks19"></a><span>结核病科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,167.html">结核病科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks20"></a><span>介入医学科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,168.html">介入医学科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks21"></a><span>康复医学科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,169.html">康复科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,170.html">理疗科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks22"></a><span>运动医学科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,171.html">运动医学科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks23"></a><span>麻醉医学科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,172.html">疼痛科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,173.html">麻醉科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks24"></a><span>职业病科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,174.html">职业病科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks25"></a><span>地方病科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,175.html">地方病科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks26"></a><span>营养科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,176.html">营养科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks27"></a><span>医学影像学</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,177.html">核医学科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,178.html">放射科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,179.html">超声科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,180.html">医学影像科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks28"></a><span>病理科</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,181.html">病理科</a></td>
-            </table>
-            <p class="ksgh_c_right_p"><a name="ks29"></a><span>其他科室</span></p>
-            <table width="672" height="44" border="0" class="ksgh_c_right_table">
-                <tr>
-                    <td><a href="/dpt/hps/1,0,0,0,182.html">急诊科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,183.html">特色医疗科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,184.html">干部诊疗科</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,185.html">重症监护室</a></td>
-                    <td><a href="/dpt/hps/1,0,0,0,186.html">特诊科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,187.html">检验科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,188.html">预防保健科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,189.html">功能检查科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,190.html">全科</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,192.html">体检科</a></td>
-                </tr>
-                <td><a href="/dpt/hps/1,0,0,0,193.html">血透中心</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,194.html">实验中心</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,195.html">碎石中心</a></td>
-                <td><a href="/dpt/hps/1,0,0,0,209.html">变态反应科</a></td>
-            </table>
-        </div>
-    </div>
-    </div>
-    <script>
-        $("#nav").find("a[href='/dpt.html']").parent().attr("class", "nav_color");</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#idType").change(function () {
+                showBirthday()
+            })
+        });
+        $(function () {
+            initValidator();
+            startLoadingPositionData("s_province", "s_city", "s_county");
+            sendSmsCodeBtn({
+                GLVar: "btnSendCode2",
+                btnId: "#btnSendCode2",
+                formId: "#rg_nrfromReg",
+                url: "/v/sendcodecommon.html",
+                valid: function () {
+                    if (!$("#rg_nr_zjhm").valid())return !1;
+                    if (!$("#rg_nr_sjhm").valid())return !1;
+                    if (!$("#rg_nr_dl_yzm").valid())return !1;
+                    return !0
+                },
+                ok: function () {
+                    var a = $("#sendsnsbtnr");
+                    a.attr("class", "rg_nr_dl_tip");
+                    a.htmll("\u77ed\u4fe1\u5df2\u53d1\u9001,\u8bf75\u5206\u949f\u5185\u8f93\u5165.")
+                },
+                notok: function (a) {
+                    var b =
+                            $("#sendsnsbtnr");
+                    b.attr("class", "rg_nr_dl_o");
+                    b.htmll(a.msg)
+                },
+                error: function () {
+                    var a = $("#sendsnsbtnr");
+                    a.attr("class", "rg_nr_dl_o");
+                    a.htmll("\u77ed\u4fe1\u53d1\u9001\u5931\u8d25.")
+                }
+            })
+        });
+        function showBirthday() {
+            $("#rg_nr_dl_zjlx").val() != "1" ? $("#birthday").css("display", "block") : $("#birthday").css("display", "none")
+        }
+        function reloadImage2() {
+            document.getElementById("rg_nr_dl_img").src = basePath + "IdentityServlet?ts=" + (new Date).getTime()
+        }
+        ;
+    </script>
     <div id="fhdb"></div>
     <div id="bg"></div>
     <div id="footer">
@@ -949,22 +777,46 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-    <script src="../resources/js/ajaxfileupload.js"></script>
-    <script src="../resources/js/birthday2.js"></script>
-    <script src="../resources/js/formater.js"></script>
-    <script src="../resources/js/global.js"></script>
-    <script src="../resources/js/gvalidate.js"></script>
-    <script src="../resources/js/jdtjs.js"></script>
-    <script src="../resources/js/jquery.js"></script>
-    <script src="../resources/js/jquery.validate.js"></script>
-    <script src="../resources/js/jquery-1.7.1.min.js"></script>
-    <script src="../resources/js/loginpop.js"></script>
-    <script src="../resources/js/top.js"></script>
-    <script src="../resources/js/userattention.js"></script>
-    <script src="../resources/js/validate3.js"></script>
-    <script src="../resources/js/validate_expand.js"></script>
-    <script src="../resources/js/ymxg.js"></script>
-    <script src="../resources/js/hospitalslist.js"></script>
-    <script src="../resources/js/topdate.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/birthday2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            showBirthday();
+            $("#rg_nr_name").val("");
+            $("#rg_nr_name").focus();
+            $("#rg_nr_dl_zjlx").val("0");
+            $("#rg_nr_dl_zjlx").trigger("change");
+            $("#rg_nr_zjhm").val("");
+            $("#rg_nr_zjhm").focus();
+            $("#rg_nr_qrzjhm").val("");
+            $("#rg_nr_qrzjhm").focus();
+            $("#s_province").val("0");
+            $("#s_province").trigger("change");
+            $("#s_city").val("0");
+            $("#s_city").trigger("change");
+            $("#s_county").val("0");
+            $("#s_county").trigger("change");
+            $("#rg_nr_sjhm").val("");
+            $(".rg_nr_boy[href='0']").click();
+            $(".rg_nr_girl[href='0']").click();
+            $("#rg_nr_name").focus()
+        });
+    </script>
+    <script src="../../resources/js/ajaxfileupload.js"></script>
+    <script src="../../resources/js/birthday2.js"></script>
+    <script src="../../resources/js/formater.js"></script>
+    <script src="../../resources/js/global.js"></script>
+    <script src="../../resources/js/gvalidate.js"></script>
+    <script src="../../resources/js/jdtjs.js"></script>
+    <script src="../../resources/js/jquery.js"></script>
+    <script src="../../resources/js/jquery.validate.js"></script>
+    <script src="../../resources/js/jquery-1.7.1.min.js"></script>
+    <script src="../../resources/js/loginpop.js"></script>
+    <script src="../../resources/js/top.js"></script>
+    <script src="../../resources/js/userattention.js"></script>
+    <script src="../../resources/js/validate3.js"></script>
+    <script src="../../resources/js/validate_expand.js"></script>
+    <script src="../../resources/js/ymxg.js"></script>
+    <script src="../../resources/js/hospitalslist.js"></script>
+    <script src="../../resources/js/topdate.js"></script>
     </body>
 </htmll>
