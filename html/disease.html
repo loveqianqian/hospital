@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable = no"/>
     <title>北京市预约挂号统一平台</title>
+    <script type="text/javascript">
+        if (typeof (GS) == "undefined" || !GS) {
+            var GS = {};
+        }
+        GS.Url = {
+            basePath: "/",
+            hs: "http://img.bjguahao.gov.cn/ws/1.0/hs/",
+            hps: "http://img.bjguahao.gov.cn/",
+            uploadUrl: "/u/upimg.htm",
+            uploadFileUrl: "/u/upimg.htm",
+            specializedHospitalUrl: "http://zmyygh.114menhu.com/"
+        };
+        var basePath = GS.Url.basePath, hs = GS.Url.hs, hps = GS.Url.hps;
+        var logined = false;</script>
     <link rel="shortcut icon" href="../resources/icon/favicon.ico" type="image/x-icon"/>
     <link href="../resources/css/rl_css.css" rel="stylesheet">
     <link href="../resources/css/rl_jquery.ui.css" rel="stylesheet">
@@ -785,7 +799,6 @@
 <script type="text/javascript">
     wValChg('yyk', 'h');
 </script>
-<script src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/ymxg.js"></script>
 <script>
     var _hmt = _hmt || [];
     (function () {
