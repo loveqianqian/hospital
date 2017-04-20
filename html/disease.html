@@ -3,18 +3,50 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable = no"/>
-    <title>天津市一中心医院预约挂号平台</title>
-    <link rel="shortcut icon" href="../resources/icon/favicon.ico" type="image/x-icon"/>
-    <link href="../resources/css/rl_css.css" rel="stylesheet">
-    <link href="../resources/css/rl_jquery.ui.css" rel="stylesheet">
-    <link href="../resources/css/style.css" rel="stylesheet">
-    <link href="../resources/css/yidongduan.css" rel="stylesheet">
+    <title>北京市预约挂号统一平台</title>
+    <script type="text/javascript">
+        if (typeof (GS) == "undefined" || !GS) {
+            var GS = {};
+        }
+        GS.Url = {
+            basePath: "/",
+            hs: "http://img.bjguahao.gov.cn/ws/1.0/hs/",
+            hps: "http://img.bjguahao.gov.cn/",
+            uploadUrl: "/u/upimg.htm",
+            uploadFileUrl: "/u/upimg.htm",
+            specializedHospitalUrl: "http://zmyygh.114menhu.com/"
+        };
+        var basePath = GS.Url.basePath, hs = GS.Url.hs, hps = GS.Url.hps;
+        var logined = false;</script>
+    <link rel="shortcut icon" href="http://img.bjguahao.gov.cn/ws/1.0/hs/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="http://img.bjguahao.gov.cn/ws/1.0/hs/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://img.bjguahao.gov.cn/ws/1.0/hs/css/rl_jquery.ui.css">
+    <link rel="stylesheet" type="text/css" href="http://img.bjguahao.gov.cn/ws/1.0/hs/css/rl_css.css">
+    <link rel="stylesheet" type="text/css" href="http://img.bjguahao.gov.cn/ws/1.0/hs/css/yidongduan.css"/>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/jquery.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/top.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/hospitalslist.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/loginpop.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/ajaxfileupload.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/global.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/userattention.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/formater.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/validate_expand.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/validate3.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/gvalidate.js"></script>
+    <script type="text/javascript" src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/topdate.js"></script>
+    <script type="text/javascript" src="/hp/regex.htm"></script>
 </head>
 <body>
 <div id="dbnav">
     <div class="dbnav_context"><p class="dbnav_context_left"><img
             src="http://img.bjguahao.gov.cn/ws/1.0/hs/images/dbnav.png"><span>010-114/116114电话预约</span></p>
-        <p class="grdbnav_context_right">欢迎您，刁志伟<a href="/u/index.htm">个人中心</a><a href="/logout.htm">退出</a></p>
+        <p class="dbnav_context_right" id="isLogin">欢迎来到北京市预约挂号统一平台 请<a id="bdtj1" href="javascript:void(0);"
+                                                                        class="db_denglu"
+                                                                        onclick="center('#djdl','#djdl_close');">登录</a><a
+                id="bdtj2" href="/reg.htm" target="_blank">注册</a></p>
         <div class="top_help"><p class="top_help_p"><a id="bdtj3" href="/help.htm" target="_blank">帮助中心</a></p>
             <div class="top_help_h" style="display:none;"><a href="/help/reg.htm" target="_blank">注册指南</a><a
                     href="/help/intro.htm" target="_blank">预约指南</a><a href="/help/retracc1.htm" target="_blank">账号申诉</a><a
@@ -464,42 +496,41 @@
 <div id="disease_c_content">
     <div id="jibingpepole">
         <div class="jibingpepole_menz">
-            <div class="jibingpepole_top_an">
-                <a href="javascript:void(0);" class="jbss_anniu"></a>
-                <a href="javascript:void(0);" class="jbss_anniu1"></a>
-            </div>
-            <div class="jibingpepole_bot_an">
-                <a href="javascript:void(0);" class="jbss_age1 jbss_color" id="adult" onclick="getBodyDisease();">成人</a>
-                <a href="javascript:void(0);" class="jbss_old" id="getAgedDisease" onclick="getAgedDisease();">老人</a>
-                <a href="javascript:void(0);" class="jbss_ch" id="child" onclick="getChildDisease();">儿童</a>
-            </div>
-            <div class="jibingpepole_cent_an">
-                <a href="javascript:void(0);" class="men_a1" id="head" onclick="getHeadDisease();"></a>
-                <a href="javascript:void(0);" class="men_a2" id="body" onclick="getBodyDisease();"></a>
-                <a href="javascript:void(0);" class="men_a3" id="chest" onclick="getChestDisease();"></a>
-                <a href="javascript:void(0);" class="men_a4" id="abdomen" onclick="getAbdomenDisease();"></a>
-                <a href="javascript:void(0);" class="men_a5" id="maleprivate" onclick="getMaleprivateDisease();"></a>
-                <a href="javascript:void(0);" class="men_a6" id="limbs" onclick="getLimbsDisease()"></a>
-            </div>
+            <div class="jibingpepole_top_an"><a href="javascript:void(0);" class="jbss_anniu"></a><a
+                    href="javascript:void(0);" class="jbss_anniu1"></a></div>
+            <div class="jibingpepole_bot_an"><a href="javascript:void(0);" class="jbss_age1 jbss_color" id="adult"
+                                                onclick="getBodyDisease();">成人</a><a href="javascript:void(0);"
+                                                                                     class="jbss_old"
+                                                                                     id="getAgedDisease"
+                                                                                     onclick="getAgedDisease();">老人</a><a
+                    href="javascript:void(0);" class="jbss_ch" id="child" onclick="getChildDisease();">儿童</a></div>
+            <div class="jibingpepole_cent_an"><a href="javascript:void(0);" class="men_a1" id="head"
+                                                 onclick="getHeadDisease();"></a><a href="javascript:void(0);"
+                                                                                    class="men_a2" id="body"
+                                                                                    onclick="getBodyDisease();"></a><a
+                    href="javascript:void(0);" class="men_a3" id="chest" onclick="getChestDisease();"></a><a
+                    href="javascript:void(0);" class="men_a4" id="abdomen" onclick="getAbdomenDisease();"></a><a
+                    href="javascript:void(0);" class="men_a5" id="maleprivate" onclick="getMaleprivateDisease();"></a><a
+                    href="javascript:void(0);" class="men_a6" id="limbs" onclick="getLimbsDisease()"></a></div>
         </div>
         <div class="jibingpepole_nvz">
-            <div class="jibingpepole_top_an">
-                <a href="javascript:void(0);" class="jbss_anniu2"></a>
-                <a href="javascript:void(0);" class="jbss_anniu4"></a>
-            </div>
-            <div class="jibingpepole_bot_an">
-                <a href="javascript:void(0);" class="jbss_age1 jbss_color" id="adult" onclick="getBodyDisease();">成人</a>
-                <a href="javascript:void(0);" class="jbss_old" id="getAgedDisease" onclick="getAgedDisease();">老人</a>
-                <a href="javascript:void(0);" class="jbss_ch" id="child" onclick="getChildDisease();">儿童</a>
-            </div>
-            <div class="jibingpepole_cent_an3">
-                <a href="javascript:void(0);" class="nv_a1" id="head" onclick="getHeadDisease();"></a>
-                <a href="javascript:void(0);" class="nv_a2" id="body" onclick="getBodyDisease();"></a>
-                <a href="javascript:void(0);" class="nv_a3" id="chest" onclick="getChestDisease();"></a>
-                <a href="javascript:void(0);" class="nv_a4" id="abdomen" onclick="getAbdomenDisease();"></a>
-                <a href="javascript:void(0);" class="nv_a5" id="femaleprivate" onclick="getFemaleprivateDisease();"></a>
-                <a href="javascript:void(0);" class="nv_a6" id="limbs" onclick="getLimbsDisease();"></a>
-            </div>
+            <div class="jibingpepole_top_an"><a href="javascript:void(0);" class="jbss_anniu2"></a><a
+                    href="javascript:void(0);" class="jbss_anniu4"></a></div>
+            <div class="jibingpepole_bot_an"><a href="javascript:void(0);" class="jbss_age1 jbss_color" id="adult"
+                                                onclick="getBodyDisease();">成人</a><a href="javascript:void(0);"
+                                                                                     class="jbss_old"
+                                                                                     id="getAgedDisease"
+                                                                                     onclick="getAgedDisease();">老人</a><a
+                    href="javascript:void(0);" class="jbss_ch" id="child" onclick="getChildDisease();">儿童</a></div>
+            <div class="jibingpepole_cent_an3"><a href="javascript:void(0);" class="nv_a1" id="head"
+                                                  onclick="getHeadDisease();"></a><a href="javascript:void(0);"
+                                                                                     class="nv_a2" id="body"
+                                                                                     onclick="getBodyDisease();"></a><a
+                    href="javascript:void(0);" class="nv_a3" id="chest" onclick="getChestDisease();"></a><a
+                    href="javascript:void(0);" class="nv_a4" id="abdomen" onclick="getAbdomenDisease();"></a><a
+                    href="javascript:void(0);" class="nv_a5" id="femaleprivate"
+                    onclick="getFemaleprivateDisease();"></a><a href="javascript:void(0);" class="nv_a6" id="limbs"
+                                                                onclick="getLimbsDisease();"></a></div>
         </div>
         <div class="jibingpepole_menb">
             <div class="jibingpepole_top_an"><a href="javascript:void(0);" class="jbss_anniu"></a><a
@@ -783,6 +814,7 @@
 <script type="text/javascript">
     wValChg('yyk', 'h');
 </script>
+<script src="http://img.bjguahao.gov.cn/ws/1.0/hs/js/ymxg.js"></script>
 <script>
     var _hmt = _hmt || [];
     (function () {
@@ -792,22 +824,5 @@
         s.parentNode.insertBefore(hm, s);
     })();
 </script>
-<script src="../resources/js/ajaxfileupload.js"></script>
-<script src="../resources/js/birthday2.js"></script>
-<script src="../resources/js/formater.js"></script>
-<script src="../resources/js/global.js"></script>
-<script src="../resources/js/gvalidate.js"></script>
-<script src="../resources/js/jdtjs.js"></script>
-<script src="../resources/js/jquery.js"></script>
-<script src="../resources/js/jquery.validate.js"></script>
-<script src="../resources/js/jquery-1.7.1.min.js"></script>
-<script src="../resources/js/loginpop.js"></script>
-<script src="../resources/js/top.js"></script>
-<script src="../resources/js/userattention.js"></script>
-<script src="../resources/js/validate3.js"></script>
-<script src="../resources/js/validate_expand.js"></script>
-<script src="../resources/js/ymxg.js"></script>
-<script src="../resources/js/hospitalslist.js"></script>
-<script src="../resources/js/topdate.js"></script>
 </body>
 </html>
